@@ -2,11 +2,6 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    resp.finish
-  end
-
-  def allow(time)
-    resp = Rack::Response.new
 
     if time < 12
       resp.write "Good Morning!"
@@ -15,6 +10,10 @@ class Application
     end
 
     resp.finish
+  end
+
+  def all(time)
+    
   end
 
 end
