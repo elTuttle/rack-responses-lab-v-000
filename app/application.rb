@@ -14,4 +14,8 @@ class Application
     resp.finish
   end
 
+  def allow(time)
+    
+  end
+
 end
