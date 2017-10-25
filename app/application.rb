@@ -1,3 +1,5 @@
+require 'pry'
+
 class Application
 
   def call(env)
@@ -12,10 +14,6 @@ class Application
     end
 
     resp.finish
-  end
-
-  def allow(time)
-    
   end
 
 end
