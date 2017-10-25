@@ -12,7 +12,7 @@ class Application
     resp.finish
   end
 
-  def all(time)
+  def allow(time)
     resp = Rack::Response.new
 
     if time < 12
