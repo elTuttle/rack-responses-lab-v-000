@@ -3,10 +3,6 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Kernel.rand(1..24)
-
-    puts "#{time.hour}\n"
-
     if time < 12
       resp.write "Good Morning!"
     else
@@ -14,6 +10,10 @@ class Application
     end
 
     resp.finish
+  end
+
+  def all(time)
+    
   end
 
 end
