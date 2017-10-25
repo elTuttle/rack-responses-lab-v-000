@@ -3,8 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.new
-    time.hour = Kernel.rand(1..24)
+    time = Kernel.rand(1..24)
 
     puts "#{time.hour}\n"
 
