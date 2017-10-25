@@ -1,5 +1,3 @@
-require 'pry'
-
 class Application
 
   def call(env)
@@ -12,9 +10,7 @@ class Application
     elsif time.hour >= 12
       resp.write "Good Afternoon!"
     end
-
-    binding.pry
-
+    
     resp.finish
   end
 
