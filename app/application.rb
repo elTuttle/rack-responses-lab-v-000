@@ -4,6 +4,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
+    time.hour = Kernel.rand(1..24)
 
     puts "#{time.hour}\n"
 
