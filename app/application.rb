@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.new
+    time = Time.new(:now)
 
     puts "#{time.hour}\n"
 
