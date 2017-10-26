@@ -5,8 +5,6 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    
-
     puts "#{time.hour}\n"
 
     if time.hour >= 0 && time.hour < 12
